@@ -1,0 +1,217 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic; }
+
+h2 {
+  text-align: center;
+  font-size: x-large;
+  margin: 8%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  color: orange; }
+
+h3 {
+  margin: 2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+  color: orange; }
+
+h4 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: smaller;
+  color: orange; }
+
+nav {
+  background-color: darkorange;
+  position: sticky;
+  z-index: 1; }
+
+.nav-item {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  margin-left: 1rem;
+  padding: 0,3rem; }
+
+a {
+  text-align: center; }
+
+.mainIndex {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-areas: "h2Index imgIndex" "pIndex pIndex"; }
+
+.h2Index {
+  grid-area: h2Index; }
+
+.imgIndex {
+  grid-area: imgIndex;
+  margin: 2rem;
+  justify-self: center;
+  display: none; }
+
+.pIndex {
+  grid-area: pIndex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 200;
+  color: orange; }
+
+.animacionIndex {
+  animation-name: indexAnimacion;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes indexAnimacion {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+.h2Combos {
+  grid-area: h2Combos;
+  text-align: center; }
+
+.carousel {
+  grid-area: carousel;
+  align-items: center; }
+
+.carousel-inner img {
+  margin: auto; }
+
+.animacionCombos {
+  grid-area: animacionCombos;
+  margin-top: 50px; }
+
+.imgCombos {
+  display: none;
+  height: 20rem;
+  justify-content: center; }
+
+.animacionCombos {
+  animation-name: combosAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes combosAnimation {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+.mainDelivery {
+  display: grid;
+  grid-template-areas: "h2Delivery h2Delivery" "logoWhatsapp parrafoD"; }
+
+.h2Delivery {
+  grid-area: h2Delivery; }
+
+.logoWhatsapp {
+  grid-area: logoWhatsapp;
+  margin-left: 10%;
+  margin-right: 50px;
+  width: 100px;
+  height: 100px; }
+
+.parrafoD {
+  margin-right: 50px;
+  grid-area: parrafoD;
+  color: orange;
+  font-size: large;
+  text-align: justify; }
+
+.insta {
+  text-decoration: none;
+  color: orange;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large; }
+
+.logoIsnta {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-self: center; }
+
+li:hover {
+  transform: scale(1.2); }
+
+h1:hover {
+  transform: scale(1.1); }
+
+footer:hover {
+  transform: scale(1.4); }
+
+.mainContact {
+  display: grid;
+  grid-template-areas: "h2Contact h2Contact" "buttonContact formContact"; }
+
+.h2Contact {
+  grid-area: h2Contact; }
+
+.buttonContact {
+  grid-area: buttonContact;
+  width: fit-content;
+  margin-left: 10%; }
+
+.aContact {
+  justify-self: center; }
+
+.pContact {
+  color: orange;
+  text-align: center;
+  width: 50%; }
+
+.formContact {
+  background-color: black;
+  border: 3px solid darkorange;
+  margin-right: 10px;
+  width: max-content;
+  grid-area: formContact;
+  display: flex;
+  justify-content: center; }
+  .formContact fieldset legend {
+    margin-left: 10px;
+    color: orange; }
+  .formContact fieldset div {
+    justify-items: center; }
+    .formContact fieldset div label {
+      width: 120px;
+      height: 10px;
+      color: orange; }
+    .formContact fieldset div input {
+      margin: 5px; }
+
+@media screen and (min-width: 600px) {
+  .imgIndex {
+    display: block; }
+  .imgCombos {
+    display: flex;
+    height: 20rem; } }
+
+@media screen and (max-width: 600px) {
+  .footerIndex {
+    margin-top: 280px; } }
+
+.d-block {
+  width: 350px;
+  height: 350px; }
+
+div h5 {
+  color: black; }
+
+div p {
+  color: black; }
